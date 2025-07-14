@@ -18,8 +18,13 @@
 #include "base/files/file_path.h"
 #include "chrome/common/chrome_switches.h"
 #include "cobalt/browser/switches.h"
+#include "cobalt/shell/common/shell_switches.h"
 #include "content/public/common/content_switches.h"
+<<<<<<< HEAD:cobalt/app/cobalt_switch_defaults.cc
 #include "content/shell/common/shell_switches.h"
+=======
+#include "gpu/command_buffer/service/gpu_switches.h"
+>>>>>>> c7dbe7ffc9a (Decouple cobalt/shell/common and cobalt/shell/resources from content shell (#6377)):cobalt/app/cobalt_switch_defaults_starboard.cc
 #include "gpu/config/gpu_switches.h"
 #include "media/base/media_switches.h"
 #include "sandbox/policy/switches.h"

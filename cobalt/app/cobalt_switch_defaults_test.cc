@@ -20,9 +20,13 @@
 #include "base/files/file_path.h"
 #include "chrome/common/chrome_switches.h"
 #include "cobalt/browser/switches.h"
+<<<<<<< HEAD:cobalt/app/cobalt_switch_defaults_test.cc
 #include "cobalt_switch_defaults.h"
+=======
+#include "cobalt/shell/common/shell_switches.h"
+#include "cobalt_switch_defaults_starboard.h"
+>>>>>>> c7dbe7ffc9a (Decouple cobalt/shell/common and cobalt/shell/resources from content shell (#6377)):cobalt/app/cobalt_switch_defaults_starboard_test.cc
 #include "content/public/common/content_switches.h"
-#include "content/shell/common/shell_switches.h"
 #include "gpu/config/gpu_switches.h"
 #include "media/base/media_switches.h"
 #include "sandbox/policy/switches.h"
