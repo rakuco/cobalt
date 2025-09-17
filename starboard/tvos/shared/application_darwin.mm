@@ -20,6 +20,22 @@
 
 #include "starboard/shared/starboard/audio_sink/audio_sink_internal.h"
 #import "starboard/tvos/shared/media/playback_capabilities.h"
+@interface ObjCApplication : NSObject <SBDStarboardApplication>
+@end
+
+@implementation ObjCApplication {
+  UIView* __weak _playerContainerView;
+}
+
+- (void)setPlayerContainerView:(UIView *)view {
+  _playerContainerView = view;
+}
+
+- (void)attachPlayerView:(UIView *)subView {
+  [_playerContainerView addSubview:subView];
+}
+
+@end
 
 namespace starboard {
 namespace shared {

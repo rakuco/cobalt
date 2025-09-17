@@ -24,6 +24,7 @@
 @class SBDPlayerManager;
 @class SBDSpeechSynthesizer;
 @class SBDWindowManager;
+@class UIView;
 @protocol SBDStarboardApplication;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -81,6 +82,13 @@ id<SBDStarboardApplication> SBDGetApplication(void);
  *  @brief Called when Starboard requests the application to be suspended.
  */
 - (void)suspendApplication;
+
+// Sets the UIView to which player views will be added to.
+- (void)setPlayerContainerView:(UIView*)view;
+
+// Attaches a video player view that will be shown as an underlay of the web
+// contents. Does nothing if setPlayerContainerView() has not been called.
+- (void)attachPlayerView:(UIView*)subView;
 
 @end
 
