@@ -130,11 +130,6 @@
     _searchContainer.accessibilityIdentifier = @"Search Container";
     [self addSubview:_searchContainer];
 
-    _playerContainer = [[UIView alloc] initWithFrame:frame];
-    _playerContainer.accessibilityIdentifier = @"Player Container";
-    _playerContainer.backgroundColor = [UIColor blackColor];
-    [self addSubview:_playerContainer];
-
     _interfaceContainer =
         [[SBDApplicationViewInterfaceContainer alloc] initWithFrame:frame
                                                           responder:self];

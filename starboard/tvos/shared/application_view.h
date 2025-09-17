@@ -33,11 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) UIView* interfaceContainer;
 
 /**
- *  @brief The @c UIView that all player views should be added to.
- */
-@property(nonatomic, readonly) UIView* playerContainer;
-
-/**
  *  @brief The @c UIView that all search controllers should be added to.
  */
 @property(nonatomic, readonly) UIView* searchContainer;

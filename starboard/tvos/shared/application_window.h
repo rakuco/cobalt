@@ -136,11 +136,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)attachSurface:(SBDEglSurface*)surface;
 
 /**
- *  @brief Attach a player's view so it is displayed with this window.
- */
-- (void)attachPlayerView:(UIView*)playerView;
-
-/**
  *  @brief Attach a view to handle focus interactions.
  */
 - (void)attachUiNavigationView:(UIView*)view;

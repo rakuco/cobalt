@@ -618,10 +618,6 @@ static const NSDictionary<NSString*, NSNumber*>* keyCommandToSbKey = @{
   });
 }
 
-- (void)attachPlayerView:(UIView*)playerView {
-  [_viewController.applicationView.playerContainer addSubview:playerView];
-}
-
 - (void)attachUiNavigationView:(UIView*)view {
   [_viewController.applicationView.interfaceContainer addSubview:view];
   [_viewController.applicationView.interfaceContainer bringSubviewToFront:view];
